@@ -23,8 +23,8 @@ pip install openai python-dotenv
 
 1. **Clone the Repository**:
    ```bash
-   git clone https://github.com/your-repo/openai-text-summarizer.git
-   cd openai-text-summarizer
+   git clone https://github.com/Anushka1912/Content_Summarizer.git
+   cd Content_Summarizer
    ```
 
 2. **Create a `.env` File**:
