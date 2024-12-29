@@ -57,7 +57,7 @@ pip install openai python-dotenv
 
 ```
 .
-├── main.py     # Main script
+├── main.py           # Main script
 ├── .env              # Environment variables (contains API key)
 ├── summarizer.db     # SQLite database file (auto-created)
 ├── README.md         # Project documentation
