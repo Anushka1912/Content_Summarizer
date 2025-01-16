@@ -28,12 +28,14 @@ def initialize_database():
     conn.close()
 
 def summarize_text(long_text):
+    if len(long_text.split()) < 150:  
+        return "Text is too short to summarize."
     try:
         response = openai.ChatCompletion.create(
             model="gpt-3.5-turbo",
             messages=[
                 {"role": "system", "content": "You are a summarization assistant."},
-                {"role": "user", "content": f"Summarize the following text in under 150 words: {long_text}"}
+                {"role": "user", "content": f"Summarize the following text in under 100 words: {long_text}"}
             ]
         )
         return response['choices'][0]['message']['content'].strip()
